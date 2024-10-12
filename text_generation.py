@@ -1,6 +1,7 @@
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+from graphviz import Digraph
 
 # load api_key
 load_dotenv()
@@ -22,14 +23,41 @@ chat = model.start_chat(
             ]
         )
 
+# create a new Graphviz Digraph instance
+flowchart = Digraph(comment='Chatbot Flowchart')
+
+# start flowchart in initial states
+flowchart.node('A', 'Hello')
+flowchart.node('B', 'Great to meet you. What would you like to know?')
+flowchart.edge('A', 'B')
+
+# initialize previous step
+previous_step = 'B'
+
 # take in input as long as user doesn't reply with 'q'
 while(True):
     prompt = input('Enter a reply: ')
     if prompt == 'q':
         break
-
+    
     response = chat.send_message(prompt)
     print(response.text)
+
+    # Add the user response and the model response to the flowchart
+    user_node = f'User: {prompt}'
+    model_node = f'Model: {response.text}'
+
+    flowchart.node(user_node, user_node)
+    flowchart.edge(previous_step, user_node)
+
+    flowchart.node(model_node, model_node)
+    flowchart.edge(user_node, model_node)
+
+    # Update the previous step for the next iteration
+    previous_step = model_node
+
+# Save the flowchart to a file
+flowchart.render('chatbot_flowchart', format='png', cleanup=True)
 
 # PROMPTS TESTING
 # default_prompt = "You are a Michigan Engineering student. Weigh the options of your major choices for different career paths."

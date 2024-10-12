@@ -1,0 +1,124 @@
+// Chatbot Flowchart
+digraph {
+	A [label=Hello]
+	B [label="Great to meet you. What would you like to know?"]
+	A -> B
+	"User: create a flowchart using mermaid of a list of common vegetables" [label="User: create a flowchart using mermaid of a list of common vegetables"]
+	B -> User:" create a flowchart using mermaid of a list of common vegetables"
+	"Model: ```mermaid
+graph LR
+    subgraph Vegetables
+        A[Root Vegetables] --> B{Beets}
+        A --> C{Carrots}
+        A --> D{Potatoes}
+        A --> E{Turnips}
+        A --> F{Radishes}
+    end
+    subgraph Vegetables
+        G[Leafy Greens] --> H{Spinach}
+        G --> I{Kale}
+        G --> J{Lettuce}
+        G --> K{Collard Greens}
+    end
+    subgraph Vegetables
+        L[Brassicas] --> M{Broccoli}
+        L --> N{Cauliflower}
+        L --> O{Cabbage}
+        L --> P{Brussels Sprouts}
+    end
+    subgraph Vegetables
+        Q[Other Vegetables] --> R{Tomatoes}
+        Q --> S{Peppers}
+        Q --> T{Onions}
+        Q --> U{Garlic}
+        Q --> V{Mushrooms}
+    end
+```
+
+This flowchart represents a basic list of common vegetables, categorized into their respective types. You can customize this flowchart further by:
+
+* **Adding more vegetables:** Include other vegetables like zucchini, cucumbers, asparagus, etc.
+* **Expanding the categories:** You can create subcategories for more specific types of vegetables like root vegetables (sweet potatoes, parsnips, etc.). 
+* **Adding descriptions:** You can add descriptions to each vegetable to provide more information about them.
+* **Using different shapes and colors:** You can use different shapes and colors to represent different types of vegetables. 
+
+Let me know if you have any other requirements or modifications for the flowchart. 
+" [label="Model: ```mermaid
+graph LR
+    subgraph Vegetables
+        A[Root Vegetables] --> B{Beets}
+        A --> C{Carrots}
+        A --> D{Potatoes}
+        A --> E{Turnips}
+        A --> F{Radishes}
+    end
+    subgraph Vegetables
+        G[Leafy Greens] --> H{Spinach}
+        G --> I{Kale}
+        G --> J{Lettuce}
+        G --> K{Collard Greens}
+    end
+    subgraph Vegetables
+        L[Brassicas] --> M{Broccoli}
+        L --> N{Cauliflower}
+        L --> O{Cabbage}
+        L --> P{Brussels Sprouts}
+    end
+    subgraph Vegetables
+        Q[Other Vegetables] --> R{Tomatoes}
+        Q --> S{Peppers}
+        Q --> T{Onions}
+        Q --> U{Garlic}
+        Q --> V{Mushrooms}
+    end
+```
+
+This flowchart represents a basic list of common vegetables, categorized into their respective types. You can customize this flowchart further by:
+
+* **Adding more vegetables:** Include other vegetables like zucchini, cucumbers, asparagus, etc.
+* **Expanding the categories:** You can create subcategories for more specific types of vegetables like root vegetables (sweet potatoes, parsnips, etc.). 
+* **Adding descriptions:** You can add descriptions to each vegetable to provide more information about them.
+* **Using different shapes and colors:** You can use different shapes and colors to represent different types of vegetables. 
+
+Let me know if you have any other requirements or modifications for the flowchart. 
+"]
+	User:" create a flowchart using mermaid of a list of common vegetables" -> Model:" ```mermaid
+graph LR
+    subgraph Vegetables
+        A[Root Vegetables] --> B{Beets}
+        A --> C{Carrots}
+        A --> D{Potatoes}
+        A --> E{Turnips}
+        A --> F{Radishes}
+    end
+    subgraph Vegetables
+        G[Leafy Greens] --> H{Spinach}
+        G --> I{Kale}
+        G --> J{Lettuce}
+        G --> K{Collard Greens}
+    end
+    subgraph Vegetables
+        L[Brassicas] --> M{Broccoli}
+        L --> N{Cauliflower}
+        L --> O{Cabbage}
+        L --> P{Brussels Sprouts}
+    end
+    subgraph Vegetables
+        Q[Other Vegetables] --> R{Tomatoes}
+        Q --> S{Peppers}
+        Q --> T{Onions}
+        Q --> U{Garlic}
+        Q --> V{Mushrooms}
+    end
+```
+
+This flowchart represents a basic list of common vegetables, categorized into their respective types. You can customize this flowchart further by":
+
+* **Adding more vegetables:** Include other vegetables like zucchini, cucumbers, asparagus, etc.
+* **Expanding the categories:** You can create subcategories for more specific types of vegetables like root vegetables (sweet potatoes, parsnips, etc.). 
+* **Adding descriptions:** You can add descriptions to each vegetable to provide more information about them.
+* **Using different shapes and colors:** You can use different shapes and colors to represent different types of vegetables. 
+
+Let me know if you have any other requirements or modifications for the flowchart. 
+
+}

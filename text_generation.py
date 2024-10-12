@@ -12,5 +12,8 @@ genai.configure(api_key=os.environ['API_KEY'])
 
 
 model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content("Write a story about a magic backpack.")
+default_prompt = "You are a Michigan Engineering student. Weigh the options of your major choices for different career paths."
+user_input = input("Enter prompt: ")
+prompt = user_input if user_input.strip() else default_prompt
+response = model.generate_content(prompt)
 print(response.text)

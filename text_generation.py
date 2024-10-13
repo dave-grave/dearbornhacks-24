@@ -23,7 +23,11 @@ def read_info_files():
             ee_eng_info = f.read()
         with open('./course_data/ds_lsa_info.txt', 'r') as f:
             ds_lsa_info = f.read()
-        return cs_lsa_info, cs_eng_info, ce_eng_info, ee_eng_info, ds_lsa_info
+        with open('./course_data/ds_eng_info.txt', 'r') as f:
+            ds_eng_info = f.read()
+        with open('./course_data/eecs_courses_info.txt', 'r') as f:
+            eecs_courses_info = f.read()
+        return cs_lsa_info, cs_eng_info, ce_eng_info, ee_eng_info, ds_lsa_info, ds_eng_info, eecs_courses_info
     except Exception as e:
         logging.error(f"Error reading course files: {e}")
         return "", ""
@@ -45,7 +49,7 @@ genai.configure(api_key=os.environ['API_KEY'])
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Read program information
-cs_lsa_info, cs_eng_info, ds_lsa_info, ee_eng_info, ce_eng_info = read_info_files()
+cs_lsa_info, cs_eng_info, ds_lsa_info, ee_eng_info, ce_eng_info, ds_eng_info, eecs_courses_info = read_info_files()
 
 # Start chat with basic conversation prompts and program information
 chat = model.start_chat(
@@ -70,6 +74,10 @@ chat = model.start_chat(
         {"role": "model", "parts": "I have read and understood the EE-ENG program information. How can I assist you with this program?"},
          {"role": "user", "parts": f"Here's information about the DS-LSA program:\n\n{ds_lsa_info}"},
         {"role": "model", "parts": "I have read and understood the DS-LSA program information. How can I assist you with this program?"},
+        {"role": "user", "parts": f"Here's information about the DS-ENG program:\n\n{ds_eng_info}"},
+        {"role": "model", "parts": "I have read and understood the DS-ENG program information. How can I assist you with this program?"},
+        {"role": "user", "parts": f"Here's information about the all the EECS courses:\n\n{eecs_courses_info}"},
+        {"role": "model", "parts": "I have read and understood the EECS courses catalog. I will use this information when referencing courses in the future."},
     ]
 )
 

@@ -1,0 +1,76 @@
+DATA SCIENCE PROGRAM - LSA
+Fall 2024-Winter 2025 Program Guide
+
+DECLARATION REQUIREMENTS:
+1. Completion of pre-declaration requirements with grade C or better:
+   a. Introductory data science: DATASCI 101 or STATS 250 or STATS 280 or IOE 265 or ECON 451
+   b. Introductory programming: EECS 180 or 183
+   c. Calculus I: MATH 115 or 120 or 185 or 275 or 295
+   d. Calculus II: MATH 116 or 121 or 186 or 276 or 296
+2. Academic Good Standing
+
+PROGRAM REQUIREMENTS:
+1. Prerequisites:
+   - Introductory data science (see declaration requirements)
+   - Introductory programming (see declaration requirements)
+   - Calculus I and II (see declaration requirements)
+   - Calculus III: MATH 205 or 215 or 285 or 296
+   - Linear algebra: MATH 214 or 217
+
+2. Program Core (16 credits):
+   - EECS 203: Discrete Math (or MATH 465)
+   - EECS 280: Programming and Introductory Data Structures
+   - EECS 281: Data Structures and Algorithms
+   - STATS 413: Applied Regression Analysis
+
+3. Statistical Theory (3 credits):
+   Choose one: STATS 412, STATS/MATH 425, or STATS 426
+
+4. Additional Required Courses (8 credits):
+   - Machine Learning/Data Mining: DATASCI 415 or EECS 445
+   - Database Management: EECS 484 or EECS 485
+
+5. Electives:
+   - One course from Applications Electives list
+   - One course from Advanced Technical Electives list
+   - One course from Advanced Statistical Analysis list
+   - Additional electives as needed to satisfy 42 credits for the major
+
+6. Capstone Experience (4 credits):
+   Approved capstone course or project
+
+MAJOR GRADING & REPEAT POLICIES:
+- C or better required in all courses used to satisfy major requirements
+- EECS Department repeat policy applies to EECS 203, 280, and 281
+
+GPA CALCULATION:
+Minimum 2.0 GPA required in all courses used to satisfy major requirements
+
+MINOR AND DOUBLE MAJOR REGULATIONS:
+- Students may double major in Computer Science and Data Science
+- Data Science majors cannot minor in Data Science, Statistics, or Computer Science
+
+HONORS PROGRAM:
+- Open to LSA Data Science students with GPA of at least 3.4
+- Complete regular major program with overall GPA of at least 3.5
+- Elect Senior Honors Seminar (STATS 499)
+- Complete project or thesis under faculty direction
+
+CAPSTONE ALTERNATIVES:
+1. Multidisciplinary Design Project (MDP)
+2. Internship as Capstone (STATS 489)
+
+ADVISING:
+- Appointments available with faculty advisors or undergraduate program coordinators
+- Open advising available for quick questions
+
+DEPARTMENTAL OPPORTUNITIES:
+- Research
+- Teaching (Instructional Aid)
+- Mentoring (Peer Advisor)
+- Student Groups
+- Internships and Job Opportunities
+
+NOTES:
+- EECS Workload Survey available for EECS classes
+- Students should consult with advisors regularly for course planning and program requirements

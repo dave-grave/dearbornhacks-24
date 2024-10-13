@@ -1,0 +1,74 @@
+DATA SCIENCE PROGRAM - ENGINEERING (DS-ENG)
+Fall 2024-Winter 2025 Program Guide
+
+DECLARATION REQUIREMENTS:
+1. Completed at least one full term or 12 total credits at UM Ann Arbor
+2. Overall UM GPA of 2.0 or better
+3. Completed courses with grade C or better:
+   a. Calculus (e.g. Math 115, 116 or 156)
+   b. Calculus-based physics lectures (e.g. Physics 140 or 160) or chemistry lectures (e.g. Chem 130)
+   c. Required engineering courses (Engr 100, 101, or 151)
+
+PROGRAM REQUIREMENTS:
+1. College of Engineering Core Requirements (39 credits):
+   - CHEM 125/126/130 or CHEM 210/211
+   - ENGR 100, 101 (or 151 or EECS 180 AP credit or EECS 183 or Robotics 102)
+   - MATH 115, 116, 214 (or 217 or 417), 215
+   - PHYSICS 140/141, 240/241
+   - Intellectual Breadth (16 credits)
+   - General Electives (11-12 credits)
+
+2. DS-Eng Program Core (34 credits):
+   - Introductory Data Science: DATASCI 101 (strongly recommended), STATS 250, STATS 280, IOE 265, or ECON 451
+   - EECS 203 or MATH 465: Discrete Mathematics
+   - EECS 280: Programming and Elementary Data Structures
+   - EECS 281: Data Structures and Algorithms
+   - STATS 412 or MATH/STATS 425 or MATH/STATS 426: Introduction to Probability and Statistics
+   - STATS/DATASCI 413: Applied Regression Analysis
+   - Databases and Applications: EECS 484 or EECS 485
+   - Machine Learning/Data Mining: EECS 445 or DATASCI 415
+   - Data Science Applications elective (see online list)
+
+3. Advanced Electives and Capstone (12 credits):
+   - Advanced Technical Elective (4 credits)
+   - Advanced Statistical Analysis Elective (4 credits)
+   - Capstone Experience Course (4 credits)
+
+4. Other Requirements:
+   - Flexible Technical Electives (11 credits)
+   - TCHNCLCM 300 (1 credit)
+   - EECS 496 or ENGR 499-002 or approved alternative (2 credits)
+   - TCHNCLCM 497 or STATS 404 or STATS 485 (2 credits)
+
+MAJOR GRADING & REPEAT POLICIES:
+- C or better required in all courses used to satisfy major requirements
+- 200-level courses (EECS 203, 280, 281) limited to two attempts
+
+COLLEGE OF ENGINEERING POLICIES:
+- Intellectual Breadth requirements
+- Dual major requirements
+- Pass/Fail policy
+- Transfer credit policy
+
+COURSE PLANNING ADVICE:
+- Complete machine learning/data mining requirement in junior year or first semester of senior year
+- Limit to 2 CS courses per semester recommended
+- Refer to EECS course descriptions, Atlas, and ULCS/Senior Design Info Sheet for course information
+
+DEPARTMENTAL OPPORTUNITIES:
+- Research
+- Teaching (Instructional Aid)
+- Mentoring (Peer Advisor)
+- Student Groups
+- Internships and Job Opportunities
+
+SAMPLE SCHEDULE:
+[Detailed 8-semester plan provided in the document]
+
+GPA CALCULATION:
+Include all EECS courses, DS Program Core, Advanced Electives, Capstone, and approved Stats requirement. Minimum 2.0 GPA required for graduation.
+
+NOTES:
+- Students must complete additional application electives, advanced technical electives, or advanced statistical analysis electives to satisfy the required 46 credits for the major
+- A course taken for capstone credit cannot also count for an advanced technical elective or advanced statistical analysis elective
+- Double-majoring in CS-ENG and DS-ENG is not allowed

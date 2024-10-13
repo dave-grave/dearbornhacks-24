@@ -1,39 +1,96 @@
-CS-LSA Program Guide
+CS-LSA Program Guide (Fall 2024-Winter 2025)
 
-Declaration Requirements:
+DECLARATION REQUIREMENTS:
 1. Selected to study CS through approved pathways (for students admitted Fall 2023 or later)
 2. Completion of pre-declaration requirements with grade C or better:
-   - One approved math course
-   - EECS 203 or equivalent
-   - EECS 280
+   a. One approved math course
+   b. EECS 203 or equivalent
+   c. EECS 280
 3. Academic Good Standing
 
-Program Requirements:
+MATH REQUIREMENTS:
+Two math courses from different categories:
+a. Calculus I: MATH 115, 120, 185, 295
+b. Calculus II: MATH 116, 121, 156, 186, 276, 296
+c. Linear Algebra: MATH 214, 217, 417, 419
+d. Multivariable Calculus: MATH 205, 215, 285
+e. Differential Equations: MATH 216, 286, 316
+
+PROGRAM REQUIREMENTS:
 1. CS Core Courses:
    - Second approved math course
    - EECS 281, 370, 376
-   - Probability & Statistics course (STATS 250, DATASCI 101, STATS 280, STATS 412, STATS 426, EECS 301, EECS 401, ECON 451, IOE 265, or TO 301)
-2. Upper Level CS Technical Electives (ULCS) - 15 credits
-3. Capstone Course
+   - Probability & Statistics: STATS 250, DATASCI 101, STATS 280, STATS 412, STATS 426, EECS 301, EECS 401, ECON 451, IOE 265, or TO 301
+2. Upper Level CS Technical Electives (ULCS): 15 credits
+   - At least 12 credits from ULCS list
+   - Remaining 3 credits can be from Expanded ULCS list
+3. Capstone Course: Approved EECS CS Capstone course
 
-Math Requirements:
-Two math courses from different categories:
-- Calculus I: MATH 115, 120, 185, 295
-- Calculus II: MATH 116, 121, 156, 186, 276, 296
-- Linear Algebra: MATH 214, 217, 417, 419
-- Multivariable Calculus: MATH 205, 215, 285
-- Differential Equations: MATH 216, 286, 316
-
-Major Grading & Repeat Policies:
+MAJOR GRADING & REPEAT POLICIES:
 - C or better required in all major courses
 - 200-level courses (EECS 203, 280, 281) limited to two attempts
 
-CS-LSA Tracks (Optional):
-- Artificial Intelligence
-- Data and Information
-- Economics and Computation
-- Robotics and Vision
-- Security
-- Software Development
-- Software Systems
-- Theory of Computation
+CHOOSING BACHELOR OF ARTS (B.A.) OR BACHELOR OF SCIENCE (B.S.):
+- B.S. requires 60 credits from physical/natural sciences or mathematics
+- B.A. does not have this requirement
+- Most CS-LSA majors reach B.S. threshold with 55 credits in Sample Schedule
+- B.A. offers more flexibility for non-STEM courses
+- Both degrees are equally valued by employers and graduate schools
+
+CS HONORS PROGRAM:
+- Open to LSA students completing CS B.S. degree
+- Requirements: 3.5 GPA in CS major, complete EECS 443, write thesis, 3.4 overall UM GPA
+
+SAMPLE SCHEDULE:
+[Detailed 8-semester plan provided in the document]
+
+COURSE PLANNING ADVICE:
+- EECS 203 & 280: Often taken simultaneously
+- EECS 281: Take as soon as possible (gateway course)
+- Workload categories: Extremely heavy, Heavy, Moderate, Light
+- Limit to 2 CS courses per semester recommended
+
+CS-LSA TRACKS (OPTIONAL):
+1. Artificial Intelligence
+2. Data and Information
+3. Economics and Computation
+4. Robotics and Vision
+5. Security
+6. Software Development
+7. Software Systems
+8. Theory of Computation
+
+DEPARTMENTAL OPPORTUNITIES:
+- Research
+- Teaching (Instructional Aid)
+- Mentoring (Peer Advisor)
+- Student Groups
+- Internships and Job Opportunities
+
+GPA CALCULATION:
+Include all EECS courses, CS Program Core, ULCS, Capstone, and approved Stats requirement. Minimum 2.0 GPA required for graduation.
+
+DIFFERENCES BETWEEN B.A. AND B.S. DEGREES:
+1. Credit Distribution:
+   - B.S.: Requires 60 credits from physical/natural sciences or mathematics
+   - B.A.: No specific credit distribution requirement for STEM courses
+2. Flexibility:
+   - B.S.: More structured, focuses on STEM courses
+   - B.A.: Offers more flexibility for non-STEM courses and interdisciplinary studies
+3. Career Implications:
+   - Both degrees are equally valued by most employers
+   - B.S. may be preferred for certain technical or research-oriented positions
+   - B.A. may be advantageous for roles requiring broader skill sets
+4. Graduate School:
+   - Both degrees suitable for graduate studies in Computer Science
+   - B.S. may have slight advantage for STEM-focused graduate programs
+   - B.A. may be preferred for interdisciplinary graduate programs
+5. Curriculum Focus:
+   - B.S.: Emphasizes depth in scientific and mathematical concepts
+   - B.A.: Allows for broader exploration of liberal arts alongside CS
+6. Typical Student Profile:
+   - B.S.: Students focused primarily on technical aspects of CS
+   - B.A.: Students interested in combining CS with other disciplines
+7. Degree Completion:
+   - B.S.: Most CS-LSA students naturally complete B.S. requirements
+   - B.A.: Requires intentional planning to balance CS with other interests

@@ -1,0 +1,73 @@
+COMPUTER ENGINEERING (CE) PROGRAM GUIDE (Fall 2024-Winter 2025)
+
+DECLARATION REQUIREMENTS:
+1. Completed at least one full term or 12 total credits at U of M Ann Arbor
+2. Overall UM GPA of 2.0 or better
+3. Completed courses with grade C or better:
+   a. Calculus (e.g. Math 115, 116 or 156)
+   b. Calculus-based physics lectures (e.g. Physics 140 or 160) or chemistry lectures (e.g. Chem 130)
+   c. Required engineering courses (Engr 100, 101, or 151)
+
+PROGRAM REQUIREMENTS:
+1. College of Engineering Core Requirements (39 credits):
+   - CHEM 125/126/130 or CHEM 210/211
+   - ENGR 100, 101 (or 151 or EECS 180 AP credit or EECS 183)
+   - MATH 115, 116, 214 (or 217 or 417 or 419), 216
+   - PHYSICS 140/141, 240/241
+   - Intellectual Breadth (16 credits)
+   - General Electives (13 credits)
+
+2. CE Program Core Courses (32 credits):
+   - EECS 203, 215, 216, 270, 280, 370
+   - EECS 301 or MATH 425 or STATS 412
+   - EECS 496 or ENGR 499-002
+   - TCHNCLCM 300, 496
+
+3. Core Electives (8 credits):
+   Two courses from: EECS 281, 312, 351, 373
+
+4. Upper Level CE Electives (10 credits):
+   At least 10 credits from approved list, including one Major Design Experience (MDE) course
+
+5. EECS Elective (3 credits)
+
+6. Flexible Technical Electives (7 credits)
+
+MAJOR GRADING & REPEAT POLICIES:
+- C or better required in all courses used toward CE requirements
+- 200-level courses (EECS 203, 280, 281) limited to two attempts
+
+UPPER LEVEL CE ELECTIVES (ULCE) OPTIONS:
+EECS 427, 442, 452, 461, 467, 470, 471, 473, 478, 482, 483, 489, 491, 507, 570, 573, 578, 582, 583, 589, 627
+
+MAJOR DESIGN EXPERIENCE (MDE) OPTIONS:
+EECS 427, 452, 467, 470, 473
+
+SAMPLE SCHEDULE:
+[Detailed 8-semester plan provided in the document]
+
+COURSE PLANNING ADVICE:
+- EECS 203 & 280: Often taken simultaneously
+- EECS 281: Take as soon as possible (gateway course)
+- Workload categories: Extremely heavy, Heavy, Moderate, Light
+- Limit to 2 CE courses per semester recommended
+
+DEPARTMENTAL OPPORTUNITIES:
+- Research
+- Teaching (Instructional Aid)
+- Mentoring (Peer Advisor)
+- Student Groups
+- Internships and Job Opportunities
+
+CE SAMPLE PATHS:
+1. Computer Architecture
+2. Computer-Aided Design
+3. Computer-Based Control Systems
+4. Digital Signals and Systems
+5. Embedded Systems
+6. Robotics and Vision
+7. System Software
+8. VLSI Systems (Chip Design)
+
+GPA CALCULATION:
+Include all EECS courses, CE Program Core, Upper Level CE Electives, Capstone, and approved Stats requirement. Minimum 2.0 GPA required for graduation.

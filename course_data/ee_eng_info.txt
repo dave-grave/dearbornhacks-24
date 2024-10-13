@@ -1,0 +1,78 @@
+Electrical Engineering Program - Engineering
+
+Fall 2024-Winter 2025 Program Guide
+
+DECLARATION REQUIREMENTS:
+1. Completed at least one full term or 12 total credits at U of M Ann Arbor
+2. Overall UM GPA of 2.0 or better
+3. Completed courses with grade C or better:
+   a. Calculus (e.g. Math 115, 116 or 156)
+   b. Calculus-based physics lectures (e.g. Physics 140 or 160) or chemistry lectures (e.g. Chem 130)
+   c. Required engineering courses (Engr 100, 101, or 151)
+
+PROGRAM REQUIREMENTS:
+1. College of Engineering Core Requirements (39 credits):
+   - CHEM 125/126/130 or CHEM 210/211
+   - ENGR 100, 101 (or 151 or EECS 180 AP credit or EECS 183 or Robotics 102)
+   - MATH 115, 116, 214, 215/216
+   - PHYSICS 140/141, 240/241
+   - Intellectual Breadth (16 credits)
+   - General Electives (11 credits)
+
+2. EE Program Core Courses (30 credits):
+   - EECS 200, 215, 216, 230, 280, 300, 301
+   - EECS 496 or ENGR 499-002
+   - TCHNCLCM 300, 496
+
+3. Upper Level EE Electives (19 credits):
+   - At least 7 credits at 400-level or higher
+   - Courses from at least two categories
+   - Physical Electronics and Semiconductor (PES) Requirement (4 credits)
+
+4. Major Design Experience (MDE) (4 credits)
+
+5. Flexible Technical Electives (9 credits)
+
+MAJOR GRADING & REPEAT POLICIES:
+- C or better required in all courses used toward EE requirements
+- 200-level courses (EECS 203, 280, 281) limited to two attempts
+
+UPPER LEVEL EE ELECTIVES CATEGORIES:
+1. Biomedical
+2. Circuits & Solid State
+3. Communication, Control & Signal Processing
+4. Computers
+5. Electromagnetics & Optics
+6. Power
+
+SAMPLE SCHEDULE:
+[Detailed 8-semester plan provided in the document]
+
+COURSE PLANNING ADVICE:
+- EECS 215 & 216: Often taken simultaneously
+- EECS 280: Take as soon as possible (gateway course)
+- Workload categories: Extremely heavy, Heavy, Moderate, Light
+- Limit to 2 EE courses per semester recommended
+
+DEPARTMENTAL OPPORTUNITIES:
+- Research
+- Teaching (Instructional Aid)
+- Mentoring (Peer Advisor)
+- Student Groups
+- Internships and Job Opportunities
+
+EE SAMPLE PATHS:
+1. Applied Electromagnetics and RF Circuits
+2. Controls/Systems
+3. Embedded Systems
+4. MEMS and Microsystems
+5. Network Communication and Information Systems (NCIS)
+6. Optics and Photonics
+7. Power/Energy
+8. Robotics
+9. Signal and Image Processing
+10. Solid-State Devices and Nanotechnology
+11. VLSI Systems (Chip Design)
+
+GPA CALCULATION:
+Include all EECS courses, EE Program Core, Upper Level EE Electives, Capstone, and approved Stats requirement. Minimum 2.0 GPA required for graduation.

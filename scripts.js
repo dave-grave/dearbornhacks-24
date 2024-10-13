@@ -11,6 +11,9 @@ function setCourses() {
     .then((response) => response.json())
     .then((data) => {
       console.log("Courses set:", data);
+
+      // clear input after user submits
+      document.getElementById("courses-input").value = "";
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -30,6 +33,9 @@ function setYear() {
     .then((response) => response.json())
     .then((data) => {
       console.log("Year set:", data);
+
+      // clear input field after setting the year
+      document.getElementById("year-input").value = "";
     })
     .catch((error) => {
       console.error("Error:", error);

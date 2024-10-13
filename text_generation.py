@@ -64,12 +64,12 @@ chat = model.start_chat(
         {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
         {"role": "user", "parts": f"Here's information about the CS-ENG program:\n\n{cs_eng_info}"},
         {"role": "model", "parts": "I have also read and understood the CS-ENG program information. How can I assist you with this program?"},
-         {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{ce_eng_info}"},
-        {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
-         {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{ee_eng_info}"},
-        {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
-         {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{ds_lsa_info}"},
-        {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
+         {"role": "user", "parts": f"Here's information about the CE-ENG program:\n\n{ce_eng_info}"},
+        {"role": "model", "parts": "I have read and understood the CE-ENG program information. How can I assist you with this program?"},
+         {"role": "user", "parts": f"Here's information about the EE-ENG program:\n\n{ee_eng_info}"},
+        {"role": "model", "parts": "I have read and understood the EE-ENG program information. How can I assist you with this program?"},
+         {"role": "user", "parts": f"Here's information about the DS-LSA program:\n\n{ds_lsa_info}"},
+        {"role": "model", "parts": "I have read and understood the DS-LSA program information. How can I assist you with this program?"},
     ]
 )
 

@@ -5,13 +5,35 @@ import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import logging
 
+# Setup logging
+logging.basicConfig(level=logging.DEBUG)
+
+# reads in information files
 def read_info_files():
-    with open('cs_lsa_info.txt', 'r') as f:
-        cs_lsa_info = f.read()
-    with open('cs_eng_info.txt', 'r') as f:
-        cs_eng_info = f.read()
-    return cs_lsa_info, cs_eng_info
+    try:
+        with open('./course_data/cs_lsa_info.txt', 'r') as f:
+            cs_lsa_info = f.read()
+        with open('./course_data/cs_eng_info.txt', 'r') as f:
+            cs_eng_info = f.read()
+        return cs_lsa_info, cs_eng_info
+    except Exception as e:
+        logging.error(f"Error reading course files: {e}")
+        return "", ""
+
+
+# def read_course_data():
+#     folder_path = 'course_data'
+#     concatenated_content = ''
+    
+#     for filename in os.listdir(folder_path):
+#         if filename.endswith('.txt'):
+#             file_path = os.path.join(folder_path, filename)
+#             with open(file_path, 'r', encoding='utf-8') as f:
+#                 concatenated_content += f.read() + '\n'
+    
+#     return concatenated_content
 
 # Load api_key
 load_dotenv()
@@ -32,21 +54,16 @@ cs_lsa_info, cs_eng_info = read_info_files()
 chat = model.start_chat(
     history=[
         {"role": "user", "parts": "You are an academic advisor, and I am a student looking for academic career help. \
-                    Please only respond to academically related messages, and do not respond to anything unrelated, \
-                    such as video games and internet memes."},
+                    Please only respond to academically related messages such as classwork and jobs, \
+                    and do not respond to anything unrelated, such as video games and internet memes."},
         {"role": "model", "parts": "Great to meet you. What would you like to know?"},
+
         {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{cs_lsa_info}"},
         {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
         {"role": "user", "parts": f"Here's information about the CS-ENG program:\n\n{cs_eng_info}"},
         {"role": "model", "parts": "I have also read and understood the CS-ENG program information. How can I help you with information from either of these programs?"},
     ]
 )
-
-# Flask app setup
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
-
-# ... (rest of your code remains the same)
 
 # Flask app setup
 app = Flask(__name__)
@@ -75,6 +92,11 @@ def read_google_doc(doc_id):
 def send_message():
     data = request.json
     message = data.get('message', '')
+    # course_data = read_course_data()
+
+    # Enrich the message with the course data
+    # enriched_message = f"Course data: {course_data}. Message: {message}"
+
     doc_id = data.get('docId', '')
 
     if doc_id:

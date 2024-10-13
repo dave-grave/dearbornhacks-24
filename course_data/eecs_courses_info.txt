@@ -1,0 +1,205 @@
+100 Level Courses:
+EECS 110. Discover Computer Science (2 credits)
+Introduction to basic CS concepts using an introductory programming language like Python. Covers variables, conditionals, loops, and functions. Includes interactions with researchers and professionals to learn about real-world applications of CS.
+EECS 180. Exam/Transfer Introductory Computer Programming Credit (3-4 credits)
+Credit for college-level introductory programming based on exam scores or transfer credit. Indicates preparedness for EECS 280.
+EECS 183. Elementary Programming Concepts (4 credits)
+Fundamental programming concepts including flow control, data structures, algorithms, and program design. Focuses on good program structure and style using a high-level language.
+200 Level Courses:
+EECS 200. Electrical Engineering Systems Design I (2 credits)
+Introduction to electrical engineering centered around a design competition. Applies concepts in circuits, computing, control, sensors, optics, power, signal processing, and wireless communications to systems like robots.
+EECS 201. Computer Science Pragmatics (1 credit)
+Essential tools for computer programming including shells, environments, scripting, Makefiles, compilers, debugging tools, and version control.
+EECS 203. Discrete Mathematics (4 credits)
+Introduction to mathematical foundations of computer science, covering propositional and predicate logic, set theory, functions, relations, and basic counting techniques.
+EECS 215. Introduction to Electronic Circuits (4 credits)
+Basic concepts of voltage and current, circuit analysis techniques, electronic devices and amplifiers, digital logic circuits, and operational amplifiers.
+EECS 216. Introduction to Signals and Systems (4 credits)
+Theory and practice of signals and systems engineering in continuous and discrete time. Covers Fourier analysis, sampling, filtering, and an introduction to control and communications.
+EECS 230. Electromagnetics I (4 credits)
+Vector calculus, electrostatics, magnetostatics, time-varying fields, Maxwell's equations, plane waves, and transmission lines.
+EECS 250. Electronic Sensing Systems (3 credits)
+Introduction to properties and behavior of electromagnetic energy as it pertains to naval applications of communication, radar, and electro-optics.
+EECS 270. Introduction to Logic Design (4 credits)
+Boolean algebra, digital design techniques, combinational and sequential circuits, and programmable logic devices. Includes lab with CAD-based design.
+EECS 280. Programming and Introductory Data Structures (4 credits)
+Fundamental concepts in algorithm development, data structures, and program organization using C++.
+EECS 281. Data Structures and Algorithms (4 credits)
+Introduction to algorithm analysis and O-notation, fundamental data structures, searching and sorting algorithms, and basic graph algorithms.
+EECS 285. Practical Programming in Java (2 credits)
+Introduction to Java programming, including language features, design principles, and programming practices.
+300 Level Courses:
+EECS 300. Electrical Engineering Systems Design II (3 credits)
+Advanced system-level electrical engineering design course focusing on embedded systems and addressing realistic constraints.
+EECS 301. Probabilistic Methods in Engineering (4 credits)
+Basic concepts of probability theory, random variables, and stochastic processes.
+EECS 311. Analog Circuits (4 credits)
+Analysis and design of analog circuits, including multi-stage amplifiers, feedback, and filters.
+EECS 312. Digital Integrated Circuits (4 credits)
+Design and analysis of digital integrated circuits, focusing on CMOS technology.
+EECS 314. Electrical Circuits, Systems, and Applications (4 credits)
+Circuit fundamentals, frequency response, analog and digital electronics for non-EE/CE students.
+EECS 320. Introduction to Semiconductor Devices (4 credits)
+Introduction to semiconductors, PN junctions, transistors, and related devices.
+EECS 330. Introduction to Antennas and Wireless Systems (4 credits)
+Electromagnetic fields and waves applied to antennas and wireless systems.
+EECS 334. Principles of Optics (4 credits)
+Principles of optics including geometrical optics, wave nature of light, and Fourier optics.
+EECS 351. Introduction to Digital Signal Processing (4 credits)
+Discrete-time signals and systems, digital filtering, sampling, and Fourier techniques.
+EECS 367. Introduction to Autonomous Robotics (4 credits)
+Computational introduction to robotics focusing on kinematics, motion planning, and programming of mobile robots and manipulators.
+EECS 370. Introduction to Computer Organization (4 credits)
+Basic concepts of computer organization and hardware. Assembly language programming, microprogramming, I/O, memory and storage devices.
+EECS 373. Introduction to Embedded System Design (4 credits)
+Principles of designing application-specific computer systems, microprocessors, memory-mapped I/O, interrupts, and interfacing techniques.
+EECS 376. Foundations of Computer Science (4 credits)
+Introduction to theory of computation, including finite automata, regular languages, context-free languages, Turing machines, and complexity theory.
+EECS 388. Introduction to Computer Security (4 credits)
+Introduction to computer security concepts, including cryptography, protocols, malicious code, and secure software.
+EECS 390. Programming Paradigms (4 credits)
+Survey of programming language concepts and paradigms, including functional, object-oriented, and logic programming.
+400 Level Courses:
+EECS 402. Computer Programming For Scientists and Engineers (4 credits)
+Concepts and hands-on experience in computer programming for graduate students in science or engineering.
+EECS 406. High-Tech Entrepreneurship (4 credits)
+Introduction to starting high-tech companies, covering opportunity identification, business planning, and financing.
+EECS 409. Data Science Seminar (1 credit)
+Seminar series featuring data scientists from academia, industry, and government discussing various topics in data science.
+EECS 411. Microwave Circuits I (4 credits)
+Theory and design of passive and active microwave circuits, including transmission lines, waveguides, resonators, and amplifiers.
+EECS 413. Monolithic Amplifier Circuits (4 credits)
+Analysis and design of BJT and MOS multi-transistor amplifiers. Feedback theory and frequency compensation techniques.
+EECS 414. Introduction to MEMS (4 credits)
+Micro-electro-mechanical systems (MEMS) including micro-fabrication technologies, sensors, and actuators.
+EECS 417. Electrical Biophysics (4 credits)
+Electrical biophysics of nerve and muscle, including quantitative models and biopotential mapping.
+EECS 418. Power Electronics (4 credits)
+Analysis and design of power semiconductor circuits for energy control, conversion, and conditioning.
+EECS 419. Electric Machinery and Drives (4 credits)
+Analysis and design of electric machines and drives, including DC, induction, and permanent magnet machines.
+EECS 421. Properties of Transistors (4 credits)
+In-depth study of transistor characteristics and physics.
+EECS 423. Solid-State Device Laboratory (4 credits)
+Semiconductor material and device fabrication and evaluation, including junction diodes, bipolar transistors, and field-effect transistors.
+EECS 425. Integrated Microsystems Laboratory (4 credits)
+Development of microelectromechanical systems (MEMS), including fabrication techniques, system integration, and packaging.
+EECS 427. VLSI Design I (4 credits)
+Design techniques for full-custom VLSI circuits, emphasizing CMOS technology.
+EECS 428. Introduction to Quantum Nanotechnology (3 credits)
+Introduction to quantum mechanics and its applications in nanotechnology.
+EECS 429. Semiconductor Optoelectronic Devices (4 credits)
+Principles of semiconductor optoelectronic devices, including light-emitting diodes, laser diodes, photodetectors, and solar cells.
+EECS 430. Radiowave Propagation and Link Design (4 credits)
+Fundamentals of electromagnetic wave propagation and their applications in the design of wireless communication systems.
+EECS 434. Principles of Photonics (4 credits)
+Introduction to optical phenomena and their applications in engineering systems.
+EECS 435. Fourier Optics (3 credits)
+Principles of diffraction, imaging, holography, and optical information processing based on Fourier analysis methods.
+EECS 438. Advanced Lasers and Optics Laboratory (4 credits)
+Hands-on experience with lasers and optical experiments, including nonlinear optics, fiber optics, and spectroscopy.
+EECS 440. Extended Reality for Social Impact (4 credits)
+Design and development of virtual and augmented reality applications for social impact.
+EECS 441. Mobile App Development for Entrepreneurs (4 credits)
+Best practices in mobile application development and software entrepreneurship.
+EECS 442. Computer Vision (4 credits)
+Introduction to the principles and applications of computer vision, including image formation, feature detection, and object recognition.
+EECS 443. Senior Thesis (3 credits)
+Individual research project for senior students under faculty supervision.
+EECS 445. Introduction to Machine Learning (4 credits)
+Theory and implementation of state-of-the-art machine learning algorithms for large-scale applications.
+EECS 448. Applied Machine Learning for Modeling Human Behavior (4 credits)
+Application of machine learning techniques to model human behavior across multiple modalities.
+EECS 449. Conversational Artificial Intelligence (4 credits)
+Design and implementation of conversational AI systems, covering natural language processing and dialogue management.
+EECS 452. Digital Signal Processing Design Laboratory (4 credits)
+Hands-on experience in digital signal processing, including real-time implementation of DSP algorithms.
+EECS 453. Principles of Machine Learning (4 credits)
+Fundamental principles of machine learning, including supervised and unsupervised learning, and reinforcement learning.
+EECS 455. Wireless Communications Systems (4 credits)
+Theory and design of digital wireless communication systems.
+EECS 456. Internet Foundations (4 credits)
+Fundamentals of internet architecture and protocols.
+EECS 458. Biomedical Instrumentation and Design (4 credits)
+Principles of biomedical instrumentation, including sensors, amplifiers, and signal processing for physiological measurements.
+EECS 460. Control Systems Analysis and Design (4 credits)
+Analysis and design of feedback control systems.
+EECS 461. Embedded Control Systems (4 credits)
+Design and implementation of control systems using microprocessors and real-time operating systems.
+EECS 463. Power Systems Design and Operation (4 credits)
+Fundamentals of electric power systems, including generation, transmission, distribution, and control.
+EECS 464. Hands-on Robotics (4 credits)
+Practical introduction to robotics, focusing on the design and implementation of mobile robots.
+EECS 465. Introduction to Algorithmic Robotics (3 credits)
+Algorithms for robot planning, control, and perception.
+EECS 467. Autonomous Robotics Design Experience (4 credits)
+Design and implementation of autonomous robotic systems.
+EECS 470. Computer Architecture (4 credits)
+Advanced computer architecture concepts, including pipelining, out-of-order execution, cache design, and multiprocessing.
+EECS 471. Applied Parallel Programming with GPUs (4 credits)
+Parallel computing techniques for graphics processing units (GPUs).
+EECS 473. Advanced Embedded Systems (4 credits)
+Advanced topics in embedded systems design, including real-time operating systems and hardware/software co-design.
+EECS 475. Introduction to Cryptography (4 credits)
+Fundamental concepts and techniques in cryptography and information security.
+EECS 476. Data Mining (4 credits)
+Algorithms and systems for discovering patterns in large datasets.
+EECS 477. Introduction to Algorithms (4 credits)
+Design and analysis of algorithms, including graph algorithms, dynamic programming, and NP-completeness.
+EECS 478. Logic Circuit Synthesis and Optimization (4 credits)
+Advanced techniques for the design and optimization of digital circuits.
+EECS 479. Introduction to Quantum Computing (4 credits)
+Introduction to quantum computing principles and algorithms.
+EECS 480. Social Computing Systems (4 credits)
+Design and analysis of computing systems that mediate social interactions.
+EECS 481. Software Engineering (4 credits)
+Principles and practices of software engineering, including design methodologies, testing, and project management.
+EECS 482. Introduction to Operating Systems (4 credits)
+Concepts and techniques for designing and implementing operating systems.
+EECS 483. Compiler Construction (4 credits)
+Theory and practice of programming language translation, including lexical analysis, parsing, and code generation.
+EECS 484. Database Management Systems (4 credits)
+Concepts and techniques for designing and implementing database management systems.
+EECS 485. Web Systems (4 credits)
+Concepts and technologies for building large-scale web applications and services.
+EECS 486. Information Retrieval and Web Search (4 credits)
+Theory and implementation of information retrieval systems, with a focus on web search technologies.
+EECS 487. Introduction to Natural Language Processing (4 credits)
+Computational approaches to analyzing and generating human language.
+EECS 489. Computer Networks (4 credits)
+Principles and practice of computer network design, focusing on the Internet architecture and protocols.
+EECS 490. Programming Languages (4 credits)
+Principles of programming language design and implementation.
+EECS 491. Introduction to Distributed Systems (4 credits)
+Design and implementation of distributed computing systems.
+EECS 492. Introduction to Artificial Intelligence (4 credits)
+Fundamental concepts and techniques in artificial intelligence, including search, knowledge representation, and machine learning.
+EECS 493. User Interface Development (4 credits)
+Concepts and techniques for designing and implementing graphical user interfaces.
+EECS 494. Computer Game Design and Development (4 credits)
+Principles and practice of computer game design and development.
+EECS 495. Accessible Computing (4 credits)
+Design and development of accessible technology for people with disabilities.
+EECS 496. Major Design Experience Professionalism (2 credits)
+Professional skills for engineering design projects, including teamwork, entrepreneurship, and ethics.
+EECS 497. Human-Centered Software Design and Development (4 credits)
+User-centered approaches to designing and developing software systems.
+EECS 498. Special Topics (1-4 credits)
+Various special topics in computer science and engineering.
+EECS 499. Directed Study (1-4 credits)
+Individual study of advanced topics in EECS under faculty supervision.
+500 Level Courses:
+[Numerous 500-level graduate courses]
+
+600 Level Courses:
+[Various 600-level advanced graduate courses]
+
+700 Level Courses:
+[Special topics courses at 700-level]
+
+800 Level Courses:
+ECE 820 (1 cr): Seminar in Solid-State Electronics
+
+900 Level Courses:
+CSE/ECE 990 (1-8 cr): Dissertation/Pre-Candidate
+CSE/ECE 995 (4-8 cr): Dissertation/Candidate

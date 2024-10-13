@@ -59,11 +59,7 @@ chat = model.start_chat(
                     and do not respond to anything unrelated, such as video games and internet memes."},
         {"role": "model", "parts": "Great to meet you. What would you like to know?"},
 
-        # {"role": "user", "parts": f"Here's information about the programs:\n\n{course_data}"},
-        # {"role": "model", "parts": "I have read and understood the program information offered to me. \
-        #                             I will use this information to output useful advice to users."},
-    
-
+        # read in course and major-specific information
         {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{cs_lsa_info}"},
         {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
         {"role": "user", "parts": f"Here's information about the CS-ENG program:\n\n{cs_eng_info}"},
@@ -78,6 +74,10 @@ chat = model.start_chat(
         {"role": "model", "parts": "I have read and understood the DS-ENG program information. How can I assist you with this program?"},
         {"role": "user", "parts": f"Here's information about the all the EECS courses:\n\n{eecs_courses_info}"},
         {"role": "model", "parts": "I have read and understood the EECS courses catalog. I will use this information when referencing courses in the future."},
+
+        # tell AI to output supplmentary content in Mermaid flowchart
+        {"role": "user", "parts": "Finally, as a supplement to the advice, please output a flowchart of a possible course selection in Mermaid code."},
+        {"role": "model", "parts": "I will optionally output a flowchart to complement the advice I give to users."},
     ]
 )
 
@@ -120,10 +120,10 @@ def set_year():
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
+    global current_courses, current_year
     data = request.json
     message = data.get('message', '')
-    doc_id = data.get('docId', '')
-
+    
     # Enrich the message with the current courses and year
     enriched_message = f"Message: {message}"
     if current_courses:
@@ -131,8 +131,42 @@ def send_message():
     if current_year:
         enriched_message += f"\nGraduation year: {current_year}"
 
+    # Generate response using Google Gemini
     response = chat.send_message(enriched_message)
-    return jsonify({'response': response.text})
+    
+    # Generate a simple mermaid flowchart as an example
+    mermaid_code = '''
+    graph TD;
+        A[Start] --> B{Is the action correct?};
+        B -- Yes --> C[Proceed];
+        B -- No --> D[Stop];
+        C --> E[End];
+        D --> E;
+    '''
+    
+    # Response JSON
+    response_json = {
+        'response': response.text,
+        'mermaid': mermaid_code
+    }
+    
+    return jsonify(response_json)
+
+# @app.route('/send_message', methods=['POST'])
+# def send_message():   
+#     data = request.json
+#     message = data.get('message', '')
+#     doc_id = data.get('docId', '')
+
+#     # Enrich the message with the current courses and year
+#     enriched_message = f"Message: {message}"
+#     if current_courses:
+#         enriched_message += f"\nCourses taken: {current_courses}"
+#     if current_year:
+#         enriched_message += f"\nGraduation year: {current_year}"
+
+#     response = chat.send_message(enriched_message)
+#     return jsonify({'response': response.text})
 
 if __name__ == "__main__":
     app.run(debug=True)

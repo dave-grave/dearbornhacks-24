@@ -58,20 +58,76 @@ function setYear() {
     });
 }
 
+// function sendMessage() {
+//   var messageInput = document.getElementById("message-input");
+//   var messageText = messageInput.value.trim();
+//   //   var coursesInput = document.getElementById("courses-input")
+//   //     ? document.getElementById("courses-input").value.trim()
+//   //     : "";
+//   //   var yearInput = document.getElementById("year-input")
+//   //     ? document.getElementById("year-input").value.trim()
+//   //     : "";
+
+//   if (messageText !== "") {
+//     var chatBox = document.getElementById("chat-box");
+
+//     // display user's message
+//     var userMessageElement = document.createElement("div");
+//     userMessageElement.className = "message user-message";
+//     userMessageElement.textContent = messageText;
+//     chatBox.appendChild(userMessageElement);
+
+//     // Prepare the data to be sent to the backend
+//     var postData = {
+//       message: messageText,
+//       //   courses: coursesInput,
+//       //   year: yearInput,
+//     };
+
+//     fetch("http://127.0.0.1:5000/send_message", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({ message: messageText /* postData */ }),
+//     })
+//       .then((response) => response.json())
+//       .then((data) => {
+//         if (data.error) {
+//           console.error("Error:", data.error);
+//           return;
+//         }
+
+//         // create a new element for AI response
+//         var responseMessageElement = document.createElement("div");
+//         responseMessageElement.className = "message response-message";
+
+//         // render AI message as Markdown
+//         responseMessageElement.textContent = data.response;
+//         chatBox.appendChild(responseMessageElement);
+//         chatBox.scrollTop = chatBox.scrollHeight;
+
+//         responseMessageElement.innerHTML = marked.parse(data.response);
+//         chatBox.appendChild(responseMessageElement);
+//         chatBox.scrollTop = chatBox.scrollHeight;
+//       })
+//       .catch((error) => {
+//         console.error("Error:", error);
+//       });
+//     // Reset height after sending message
+//     messageInput.value = "";
+//     adjustTextareaHeight(messageInput);
+//   }
+// }
+
 function sendMessage() {
   var messageInput = document.getElementById("message-input");
   var messageText = messageInput.value.trim();
-  //   var coursesInput = document.getElementById("courses-input")
-  //     ? document.getElementById("courses-input").value.trim()
-  //     : "";
-  //   var yearInput = document.getElementById("year-input")
-  //     ? document.getElementById("year-input").value.trim()
-  //     : "";
 
   if (messageText !== "") {
     var chatBox = document.getElementById("chat-box");
 
-    // display user's message
+    // Display user's message
     var userMessageElement = document.createElement("div");
     userMessageElement.className = "message user-message";
     userMessageElement.textContent = messageText;
@@ -80,8 +136,6 @@ function sendMessage() {
     // Prepare the data to be sent to the backend
     var postData = {
       message: messageText,
-      //   courses: coursesInput,
-      //   year: yearInput,
     };
 
     fetch("http://127.0.0.1:5000/send_message", {
@@ -89,7 +143,7 @@ function sendMessage() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ message: messageText /* postData */ }),
+      body: JSON.stringify(postData),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -98,23 +152,35 @@ function sendMessage() {
           return;
         }
 
-        // create a new element for AI response
+        // Create a new element for the AI response
         var responseMessageElement = document.createElement("div");
         responseMessageElement.className = "message response-message";
 
-        // render AI message as Markdown
-        responseMessageElement.textContent = data.response;
-        chatBox.appendChild(responseMessageElement);
-        chatBox.scrollTop = chatBox.scrollHeight;
-
+        // Render the AI response as Markdown
         responseMessageElement.innerHTML = marked.parse(data.response);
         chatBox.appendChild(responseMessageElement);
+
+        // Check if there's Mermaid code to render
+        if (data.mermaid) {
+          var mermaidDiv = document.createElement("div");
+          mermaidDiv.className = "mermaid";
+          mermaidDiv.innerHTML = data.mermaid;
+          chatBox.appendChild(mermaidDiv);
+
+          // Reinitialize Mermaid to parse newly added Mermaid code
+          mermaid.init(undefined, mermaidDiv);
+        }
+
         chatBox.scrollTop = chatBox.scrollHeight;
+
+        // Reset the message input field
+        messageInput.value = "";
+        adjustTextareaHeight(messageInput);
       })
       .catch((error) => {
         console.error("Error:", error);
       });
-    // Reset height after sending message
+
     messageInput.value = "";
     adjustTextareaHeight(messageInput);
   }

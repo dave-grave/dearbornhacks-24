@@ -6,6 +6,13 @@ from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
+def read_info_files():
+    with open('cs_lsa_info.txt', 'r') as f:
+        cs_lsa_info = f.read()
+    with open('cs_eng_info.txt', 'r') as f:
+        cs_eng_info = f.read()
+    return cs_lsa_info, cs_eng_info
+
 # Load api_key
 load_dotenv()
 api_key = os.getenv('API_KEY')
@@ -18,15 +25,28 @@ if api_key is None:
 genai.configure(api_key=os.environ['API_KEY'])
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-# Start chat with basic conversation prompts
+# Read program information
+cs_lsa_info, cs_eng_info = read_info_files()
+
+# Start chat with basic conversation prompts and program information
 chat = model.start_chat(
     history=[
         {"role": "user", "parts": "You are an academic advisor, and I am a student looking for academic career help. \
                     Please only respond to academically related messages, and do not respond to anything unrelated, \
                     such as video games and internet memes."},
         {"role": "model", "parts": "Great to meet you. What would you like to know?"},
+        {"role": "user", "parts": f"Here's information about the CS-LSA program:\n\n{cs_lsa_info}"},
+        {"role": "model", "parts": "I have read and understood the CS-LSA program information. How can I assist you with this program?"},
+        {"role": "user", "parts": f"Here's information about the CS-ENG program:\n\n{cs_eng_info}"},
+        {"role": "model", "parts": "I have also read and understood the CS-ENG program information. How can I help you with information from either of these programs?"},
     ]
 )
+
+# Flask app setup
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
+# ... (rest of your code remains the same)
 
 # Flask app setup
 app = Flask(__name__)

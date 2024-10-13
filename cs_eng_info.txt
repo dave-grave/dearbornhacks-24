@@ -1,0 +1,37 @@
+CS-ENG Program Guide
+
+Declaration Requirements:
+1. Selected to study CS through approved pathways (for students admitted Fall 2023 or later)
+2. Completed at least one full term or 12 total credits at UM Ann Arbor
+3. Overall UM GPA of 2.0 or better
+4. Completed courses with grade C or better:
+   - Calculus (e.g. Math 115, 116 or 156)
+   - Calculus-based physics lectures (e.g. Physics 140 or 160) or chemistry lectures (e.g. Chem 130)
+   - Required engineering courses (Engr 100, 101, or 151)
+
+Program Requirements:
+1. College of Engineering Core Requirements
+2. CS-Eng Program Core:
+   - EECS 203 (or MATH 465/565), 280, 281, 370, 376, 496 (or equivalent)
+   - Probability and Statistics course
+   - TCHNCLCM 300
+3. Technical Electives (25 credits minimum):
+   - 15 credits of Upper-Level CS (ULCS) Electives
+   - 10 credits of Flexible Technical Electives
+4. Major Design Experience (MDE)
+
+Major Grading & Repeat Policies:
+- C or better required in all major courses
+- 200-level courses (EECS 203, 280, 281) limited to two attempts
+
+Upper-Level CS (ULCS) Electives:
+15 credits required (12 from ULCS list, 3 from Expanded ULCS list)
+
+Flexible CS Technical Electives:
+Up to 10 credits to reach 25 total credits of Technical Electives
+
+College of Engineering Policies:
+- Intellectual Breadth requirements
+- Dual major requirements
+- Pass/Fail policy
+- Transfer credit policy

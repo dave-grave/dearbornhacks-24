@@ -1,0 +1,39 @@
+CS-LSA Program Guide
+
+Declaration Requirements:
+1. Selected to study CS through approved pathways (for students admitted Fall 2023 or later)
+2. Completion of pre-declaration requirements with grade C or better:
+   - One approved math course
+   - EECS 203 or equivalent
+   - EECS 280
+3. Academic Good Standing
+
+Program Requirements:
+1. CS Core Courses:
+   - Second approved math course
+   - EECS 281, 370, 376
+   - Probability & Statistics course (STATS 250, DATASCI 101, STATS 280, STATS 412, STATS 426, EECS 301, EECS 401, ECON 451, IOE 265, or TO 301)
+2. Upper Level CS Technical Electives (ULCS) - 15 credits
+3. Capstone Course
+
+Math Requirements:
+Two math courses from different categories:
+- Calculus I: MATH 115, 120, 185, 295
+- Calculus II: MATH 116, 121, 156, 186, 276, 296
+- Linear Algebra: MATH 214, 217, 417, 419
+- Multivariable Calculus: MATH 205, 215, 285
+- Differential Equations: MATH 216, 286, 316
+
+Major Grading & Repeat Policies:
+- C or better required in all major courses
+- 200-level courses (EECS 203, 280, 281) limited to two attempts
+
+CS-LSA Tracks (Optional):
+- Artificial Intelligence
+- Data and Information
+- Economics and Computation
+- Robotics and Vision
+- Security
+- Software Development
+- Software Systems
+- Theory of Computation

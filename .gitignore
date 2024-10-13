@@ -2,3 +2,4 @@ venv
 .env
 .prettierrc
 node_modules
+AIdvisor

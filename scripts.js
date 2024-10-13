@@ -24,6 +24,11 @@ function sendMessage() {
         responseMessageElement.textContent = data.response;
         chatBox.appendChild(responseMessageElement);
         chatBox.scrollTop = chatBox.scrollHeight;
+
+        // Render the AI response as Markdown
+        responseMessageElement.innerHTML = marked.parse(data.response);
+        chatBox.appendChild(responseMessageElement);
+        chatBox.scrollTop = chatBox.scrollHeight;
       })
       .catch((error) => {
         console.error("Error:", error);

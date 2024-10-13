@@ -20,7 +20,8 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 chat = model.start_chat(
     history=[
         {"role": "user", "parts": "You are an academic advisor, and I am a student looking for academic career help. \
-                    Please only respond to academically related messages, and do not respond to anything not related, such as homework support."},
+                    Please only respond to academically related messages, and do not respond to anything unrelated, \
+                    such as video games and internet memes."},
         {"role": "model", "parts": "Great to meet you. What would you like to know?"},
     ]
 )

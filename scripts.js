@@ -1,5 +1,6 @@
 function setCourses() {
   var coursesInput = document.getElementById("courses-input").value.trim();
+  var coursesButton = document.querySelector("[onclick='setCourses()']");
 
   fetch("http://127.0.0.1:5000/set_courses", {
     method: "POST",
@@ -14,6 +15,13 @@ function setCourses() {
 
       // clear input after user submits
       document.getElementById("courses-input").value = "";
+
+      // Change the button text to "Done!" temporarily
+      var originalText = coursesButton.textContent;
+      coursesButton.textContent = "Done!";
+      setTimeout(() => {
+        coursesButton.textContent = originalText;
+      }, 2000); // change back after 2 seconds
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -22,6 +30,7 @@ function setCourses() {
 
 function setYear() {
   var yearInput = document.getElementById("year-input").value.trim();
+  var yearButton = document.querySelector("[onclick='setYear()']");
 
   fetch("http://127.0.0.1:5000/set_year", {
     method: "POST",
@@ -36,6 +45,13 @@ function setYear() {
 
       // clear input field after setting the year
       document.getElementById("year-input").value = "";
+
+      // Change the button text to "Done!" temporarily
+      var originalText = yearButton.textContent;
+      yearButton.textContent = "Done!";
+      setTimeout(() => {
+        yearButton.textContent = originalText;
+      }, 2000); // change back after 2 seconds
     })
     .catch((error) => {
       console.error("Error:", error);

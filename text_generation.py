@@ -103,11 +103,14 @@ def generate_mermaid_code(ai_response):
     # Placeholder: Replace this with actual logic to generate Mermaid code based on AI response
     mermaid_code = "graph TD;\n"
     lines = ai_response.split('. ')
-    nodes = [f"A{index}({line})" for index, line in enumerate(lines)]
+    nodes = ["A" + str(index) for index, line in enumerate(lines)]
     
-    for i in range(len(nodes) - 1):
-        mermaid_code += f"{nodes[i]} --> {nodes[i+1]};\n"
-        
+    for i, line in enumerate(lines):
+        if i < len(lines) - 1:
+            mermaid_code += f'{nodes[i]}["{line}"] --> {nodes[i+1]}["{lines[i+1]}"];\n'
+        else:
+            mermaid_code += f'{nodes[i]}["{line}"];\n'
+    
     return mermaid_code
 
 @app.route('/send_message', methods=['POST'])

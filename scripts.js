@@ -164,7 +164,7 @@ function sendMessage() {
         if (data.mermaid) {
           var mermaidDiv = document.createElement("div");
           mermaidDiv.className = "mermaid";
-          mermaidDiv.innerHTML = data.mermaid;
+          mermaidDiv.textContent = data.mermaid;
           chatBox.appendChild(mermaidDiv);
 
           // Reinitialize Mermaid to parse newly added Mermaid code

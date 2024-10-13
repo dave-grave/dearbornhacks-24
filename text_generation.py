@@ -76,8 +76,8 @@ chat = model.start_chat(
         {"role": "model", "parts": "I have read and understood the EECS courses catalog. I will use this information when referencing courses in the future."},
 
         # tell AI to output supplmentary content in Mermaid flowchart
-        {"role": "user", "parts": "Finally, as a supplement to the advice, please output a flowchart of a possible course selection in Mermaid code."},
-        {"role": "model", "parts": "I will optionally output a flowchart to complement the advice I give to users."},
+        # {"role": "user", "parts": "Finally, as a supplement to the advice, please output a flowchart of a possible course selection in Mermaid code."},
+        # {"role": "model", "parts": "I will optionally output a flowchart to complement the advice I give to users."},
     ]
 )
 
@@ -100,25 +100,55 @@ def set_year():
     return jsonify({'status': 'Year set successfully'})
 
 def generate_mermaid_code(ai_response):
-    # Placeholder: Replace this with actual logic to generate Mermaid code based on AI response
     mermaid_code = "graph TD;\n"
     lines = ai_response.split('. ')
-    nodes = ["A" + str(index) for index, line in enumerate(lines)]
-    
-    for i, line in enumerate(lines):
-        if i < len(lines) - 1:
-            mermaid_code += f'{nodes[i]}["{line}"] --> {nodes[i+1]}["{lines[i+1]}"];\n'
-        else:
-            mermaid_code += f'{nodes[i]}["{line}"];\n'
-    
+    nodes = ["A" + str(i) for i in range(len(lines))]
+    for i in range(len(lines) - 1):
+        mermaid_code += f'{nodes[i]}["{lines[i]}"] --> {nodes[i+1]}["{lines[i+1]}"];\n'
     return mermaid_code
+
+# def generate_mermaid_code(ai_response):
+#     # Generate simple Mermaid code based on AI response
+#     mermaid_code = "graph LR;\n"
+#     lines = ai_response.split('. ')
+#     nodes = ["A" + str(i) for i in range(len(lines))]
+#     for i in range(len(lines) - 1):
+#         mermaid_code += f'{nodes[i]}["{lines[i]}"] --> {nodes[i+1]}["{lines[i+1]}"];\n'
+#     return mermaid_code
+
+# @app.route('/send_message', methods=['POST'])
+# def send_message():
+#     global current_courses, current_year
+#     data = request.json
+#     message = data.get('message', '')
+    
+#     # Enrich the message with the current courses and year
+#     enriched_message = f"Message: {message}"
+#     if current_courses:
+#         enriched_message += f"\nCourses taken: {current_courses}"
+#     if current_year:
+#         enriched_message += f"\nGraduation year: {current_year}"
+
+#     # Generate response using Google Gemini
+#     response = chat.send_message(enriched_message)
+    
+#     # Generate dynamic mermaid flowchart based on AI response
+#     mermaid_code = generate_mermaid_code(response.text)
+    
+#     # Response JSON
+#     response_json = {
+#         'response': response.text,
+#         'mermaid': mermaid_code
+#     }
+    
+#     return jsonify(response_json)
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
     global current_courses, current_year
     data = request.json
     message = data.get('message', '')
-    
+
     # Enrich the message with the current courses and year
     enriched_message = f"Message: {message}"
     if current_courses:
@@ -128,33 +158,25 @@ def send_message():
 
     # Generate response using Google Gemini
     response = chat.send_message(enriched_message)
-    
-    # Generate dynamic mermaid flowchart based on AI response
-    mermaid_code = generate_mermaid_code(response.text)
-    
+    ai_response = response.text
+
+    # Extract Mermaid code from the AI response
+    delimiter = 'Flowchart:'
+    if delimiter in ai_response:
+        parts = ai_response.split(delimiter)
+        response_text = parts[0].strip()
+        mermaid_code = parts[1].strip() if len(parts) > 1 else ""
+    else:
+        response_text = ai_response
+        mermaid_code = ""
+
     # Response JSON
     response_json = {
-        'response': response.text,
+        'response': response_text,
         'mermaid': mermaid_code
     }
-    
+
     return jsonify(response_json)
-
-# @app.route('/send_message', methods=['POST'])
-# def send_message():   
-#     data = request.json
-#     message = data.get('message', '')
-#     doc_id = data.get('docId', '')
-
-#     # Enrich the message with the current courses and year
-#     enriched_message = f"Message: {message}"
-#     if current_courses:
-#         enriched_message += f"\nCourses taken: {current_courses}"
-#     if current_year:
-#         enriched_message += f"\nGraduation year: {current_year}"
-
-#     response = chat.send_message(enriched_message)
-#     return jsonify({'response': response.text})
 
 if __name__ == "__main__":
     app.run(debug=True)

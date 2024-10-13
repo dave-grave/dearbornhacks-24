@@ -160,16 +160,14 @@ function sendMessage() {
         responseMessageElement.innerHTML = marked.parse(data.response);
         chatBox.appendChild(responseMessageElement);
 
-        // Check if there's Mermaid code to render
-        if (data.mermaid) {
-          var mermaidDiv = document.createElement("div");
-          mermaidDiv.className = "mermaid";
-          mermaidDiv.textContent = data.mermaid;
-          chatBox.appendChild(mermaidDiv);
+        // if (data.mermaid) {
+        //   var mermaidDiv = document.createElement("div");
+        //   mermaidDiv.className = "mermaid";
+        //   mermaidDiv.innerHTML = `\`\`\`mermaid\n${data.mermaid}\n\`\`\``;
+        //   chatBox.appendChild(mermaidDiv);
 
-          // Reinitialize Mermaid to parse newly added Mermaid code
-          mermaid.init(undefined, mermaidDiv);
-        }
+        //   mermaid.init(mermaidDiv);
+        // }
 
         chatBox.scrollTop = chatBox.scrollHeight;
 

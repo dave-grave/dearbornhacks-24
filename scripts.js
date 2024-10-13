@@ -1,9 +1,50 @@
+function setCourses() {
+  var coursesInput = document.getElementById("courses-input").value.trim();
+
+  fetch("http://127.0.0.1:5000/set_courses", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ courses: coursesInput }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Courses set:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
+function setYear() {
+  var yearInput = document.getElementById("year-input").value.trim();
+
+  fetch("http://127.0.0.1:5000/set_year", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ year: yearInput }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Year set:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
 function sendMessage() {
-  //   var nameInput = document.getElementById("name-input").value.trim();
-  //   var classesInput = document.getElementById("classes-input").value.trim();
-  //   var yearInput = document.getElementById("year-input").value.trim();
   var messageInput = document.getElementById("message-input");
   var messageText = messageInput.value.trim();
+  //   var coursesInput = document.getElementById("courses-input")
+  //     ? document.getElementById("courses-input").value.trim()
+  //     : "";
+  //   var yearInput = document.getElementById("year-input")
+  //     ? document.getElementById("year-input").value.trim()
+  //     : "";
 
   if (messageText !== "") {
     var chatBox = document.getElementById("chat-box");
@@ -16,10 +57,9 @@ function sendMessage() {
 
     // Prepare the data to be sent to the backend
     var postData = {
-      //   name: nameInput,
-      //   classes: classesInput,
-      //   year: yearInput,
       message: messageText,
+      //   courses: coursesInput,
+      //   year: yearInput,
     };
 
     fetch("http://127.0.0.1:5000/send_message", {
@@ -31,6 +71,11 @@ function sendMessage() {
     })
       .then((response) => response.json())
       .then((data) => {
+        if (data.error) {
+          console.error("Error:", data.error);
+          return;
+        }
+
         // create a new element for AI response
         var responseMessageElement = document.createElement("div");
         responseMessageElement.className = "message response-message";
@@ -40,7 +85,6 @@ function sendMessage() {
         chatBox.appendChild(responseMessageElement);
         chatBox.scrollTop = chatBox.scrollHeight;
 
-        // Render the AI response as Markdown
         responseMessageElement.innerHTML = marked.parse(data.response);
         chatBox.appendChild(responseMessageElement);
         chatBox.scrollTop = chatBox.scrollHeight;

@@ -1,4 +1,6 @@
 import google.generativeai as genai
+import google_auth_oauthlib.flow
+import googleapiclient.discovery
 import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
@@ -30,12 +32,41 @@ chat = model.start_chat(
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+# Google Docs API setup
+def get_gdocs_service():
+    SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
+    flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+    creds = flow.run_local_server(port=0)
+    service = googleapiclient.discovery.build('docs', 'v1', credentials=creds)
+    return service
+
+def read_google_doc(doc_id):
+    service = get_gdocs_service()
+    document = service.documents().get(documentId=doc_id).execute()
+    doc_content = ""
+    for element in document.get('body').get('content'):
+        if 'paragraph' in element:
+            for text_run in element.get('paragraph').get('elements'):
+                if 'textRun' in text_run:
+                    doc_content += text_run.get('textRun').get('content')
+    return doc_content
+
 @app.route('/send_message', methods=['POST'])
 def send_message():
     data = request.json
-    message = data['message']
+    message = data.get('message', '')
+    doc_id = data.get('docId', '')
 
-    response = chat.send_message(message)
+    if doc_id:
+        try:
+            doc_content = read_google_doc(doc_id)
+            enriched_message = f"Document content: {doc_content}. Message: {message}"
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+    else:
+        enriched_message = message
+
+    response = chat.send_message(enriched_message)
     return jsonify({'response': response.text})
 
 if __name__ == "__main__":

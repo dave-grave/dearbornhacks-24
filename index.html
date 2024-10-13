@@ -10,7 +10,20 @@
 </head>
 
 <body>
-    <div class="title-container">
+    <div class="chat-container">
+        <h1><span id="title-span">AI</span>dvising academic advising</h1>
+        <div class="user-info">
+            <input type="text" id="name-input" placeholder="Enter your name...">
+            <input type="text" id="classes-input" placeholder="Enter your classes...">
+            <input type="text" id="year-input" placeholder="Enter your graduating year...">
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-section">
+            <textarea id="message-input" rows="1" placeholder="Type your message here..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <!-- <div class="title-container">
         <h1>AIdvising Academic Help</h1>
     </div>
     <div class="chat-container">
@@ -19,7 +32,7 @@
             <textarea id="message-input" rows="1" placeholder="Type your message here..."></textarea>
             <button onclick="sendMessage()">Send</button>
         </div>
-    </div>
+    </div> -->
     <script src="scripts.js"></script>
 </body>
 
@@ -29,4 +42,5 @@
 <!-- 1. save text documents into pdf file or csv file and feed into the ai
      2. also make the site prettier
      3. functionality to feed in courses from user
+     4. return data in mermaid table format
       -->

@@ -26,6 +26,25 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.user-info input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
 .chat-box {
     flex: 1;
     overflow-y: auto;
@@ -132,4 +151,9 @@ button:hover {
     background-color: #f5f5f5;
     padding: 2px 4px;
     border-radius: 3px;
+}
+
+#title-span {
+    font-weight: 900;
+    font-size: 2em;
 }

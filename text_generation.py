@@ -85,25 +85,6 @@ chat = model.start_chat(
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Google Docs API setup
-# def get_gdocs_service():
-#     SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
-#     flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
-#     creds = flow.run_local_server(port=0)
-#     service = googleapiclient.discovery.build('docs', 'v1', credentials=creds)
-#     return service
-
-# def read_google_doc(doc_id):
-#     service = get_gdocs_service()
-#     document = service.documents().get(documentId=doc_id).execute()
-#     doc_content = ""
-#     for element in document.get('body').get('content'):
-#         if 'paragraph' in element:
-#             for text_run in element.get('paragraph').get('elements'):
-#                 if 'textRun' in text_run:
-#                     doc_content += text_run.get('textRun').get('content')
-#     return doc_content
-
 @app.route('/set_courses', methods=['POST'])
 def set_courses():
     global current_courses
@@ -117,6 +98,17 @@ def set_year():
     data = request.json
     current_year = data.get('year', '')
     return jsonify({'status': 'Year set successfully'})
+
+def generate_mermaid_code(ai_response):
+    # Placeholder: Replace this with actual logic to generate Mermaid code based on AI response
+    mermaid_code = "graph TD;\n"
+    lines = ai_response.split('. ')
+    nodes = [f"A{index}({line})" for index, line in enumerate(lines)]
+    
+    for i in range(len(nodes) - 1):
+        mermaid_code += f"{nodes[i]} --> {nodes[i+1]};\n"
+        
+    return mermaid_code
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
@@ -134,15 +126,8 @@ def send_message():
     # Generate response using Google Gemini
     response = chat.send_message(enriched_message)
     
-    # Generate a simple mermaid flowchart as an example
-    mermaid_code = '''
-    graph TD;
-        A[Start] --> B{Is the action correct?};
-        B -- Yes --> C[Proceed];
-        B -- No --> D[Stop];
-        C --> E[End];
-        D --> E;
-    '''
+    # Generate dynamic mermaid flowchart based on AI response
+    mermaid_code = generate_mermaid_code(response.text)
     
     # Response JSON
     response_json = {

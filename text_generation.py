@@ -18,7 +18,8 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 # start chat with basic conversation prompts
 chat = model.start_chat(
             history=[
-                {"role": "user", "parts": "Hello"},
+                {"role": "user", "parts": "You are an academic advisor, and I am a student looking for academic help. \
+                            Please only respond to academically related messages, and do not respond to anything not related."},
                 {"role": "model", "parts": "Great to meet you. What would you like to know?"},
             ]
         )
